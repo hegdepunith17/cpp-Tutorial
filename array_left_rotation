@@ -1,0 +1,14 @@
+vector<int> rotateLeft(int d, vector<int> arr) {
+
+
+int i=1;
+while (i<=d) {
+int first_digit=arr[0];
+for (int j=0; j<arr.size(); j++) 
+{
+arr[j]=arr[j+1];
+}
+i++;
+arr[arr.size()-1]=first_digit;
+}
+re
