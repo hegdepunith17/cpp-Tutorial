@@ -1,13 +1,13 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
 
     //Naive approach ;
 
-    int n,res=0;
-    cout<<"Enter the Number "<<endl;
-    cin>>n;
+    int n, res = 0;
+    cout << "Enter the Number " << endl;
+    cin >> n;
     // int fact=1,  count=0;
     // for(int i=2;i<=n;i++)
     //     {
@@ -20,13 +20,12 @@ int main()
     // }
     // cout<<"The number of trailing zeros  = "<<count;
 
-
-
     //Optimised appraoch
-    for(int i=5;i<=n;i*=5){
-        res=res+n/i;
+    for (int i = 5; i <= n; i *= 5)
+    {
+        res = res + n / i;
     }
 
-    cout<<"The number of trailing zeros  = "<<res;
- return 0;
+    cout << "The number of trailing zeros  = " << res;
+    return 0;
 }
